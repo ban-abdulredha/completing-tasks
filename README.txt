@@ -1,0 +1,1 @@
+Duty7_HTML is Simple web page implementation of task7 in html course about how embeded form and input attributes in html5.

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--for encoding to support arabic language-->
+    <meta http-equiv="X-UA-Compatible" content="IEq=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autdor" content="ban abdulredha">
+    <meta name="description" content ="">
+    <!-- <meta http-equiv="refresh" content="30">  -->
+
+    <title>Task7</title>
+    <style>
+      .title
+        {
+         padding: 40px;
+         margin: 30px;
+         text-align: center;
+         font-size:65px;
+         font-weight: bolder;
+        }
+        p:first-child
+        {
+            
+            font-weight: bold;
+        }
+        p:last-child
+        {
+            font-weight: bold;
+            margin: -44px;
+            font-size: 15px;
+            color:gray;
+            width: 79%;
+           padding-left: 13%
+        }
+      form
+      {
+        padding: 60px;
+        margin: 30px;
+        border: 2px solid;
+        width: 18%;
+      }
+      hr
+      {
+        margin: 15px;
+      }
+      
+    </style>
+
+   
+</head>
+
+<body>
+
+  <div class="title">
+    <p>Welcome to our webpage</p>
+    <p>If you would like to register for one of our best courses,please register by filling out the registeration form below and you will be notified of the result if you accept on the email that you used in the form</p>
+  </div>
+
+ <form action="a.html" method="post">
+
+   <div class="form_fields">
+    <label>Enter Username:</label><br>
+    <input type="text" required placeholder="ahmed" name="username" autofocus><hr>
+ 
+    <label>Enter Password:</label><br>
+    <input type ="password" placeholder="Password" name="password"><hr>
+ 
+    <label>Enter Mobile:</label><br>
+    <input type="tel"  placeholder="+964077889965" name="Mobile"><hr>
+ 
+    <label>Enter Email:</label><br>
+    <input type="email" required placeholder="ahmed@gmail.com" name="email"><hr>
+ 
+    <label>Enter Subject:</label><br>
+    <input type ="text" placeholder="choose or write the course" name="subject" list="subjects">
+    <datalist id="subjects">
+      <option value="English course"></option>
+      <option value="French course"></option>
+      <option value="chemical course"></option>
+    </datalist><hr>
+
+    <input type="hidden" name="hiddenfield" value="2021/8/23">
+
+     </div>
+
+   <div class="form_send_button">
+    <input type="submit" value="send">
+   </div>
+
+ </form> 
+</body>
+
+</html>
