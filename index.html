@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--for encoding to support arabic language-->
+    <meta http-equiv="X-UA-Compatible" content="IEq=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autdor" content="ban abdulredha">
+    <meta name="description" content ="">
+    <!-- <meta http-equiv="refresh" content="30">  -->
+
+    <title>Task8</title>
+    <style>
+      .title
+        {
+         padding: 40px;
+         margin: 30px;
+         text-align: center;
+         font-size:65px;
+         font-weight: bolder;
+        }
+        p:first-child
+        {
+            
+            font-weight: bold;
+        }
+        p:last-child
+        {
+            font-weight: bold;
+            margin: -44px;
+            font-size: 15px;
+            color:gray;
+            width: 79%;
+           padding-left: 13%
+        }
+      form
+      {
+        padding: 60px;
+        margin: 30px;
+        border: 2px solid;
+        width: 27%;
+      }
+      hr
+      {
+        margin: 15px;
+      }
+      
+    </style>
+
+   
+</head>
+
+<body>
+
+  <div class="title">
+    <p>Welcome to our webpage</p>
+    <p>If you want to sell your devices (only laptops), please fill in the data fields of the form below and you will be contacted by the buying party on the email you used in the form</p>
+  </div>
+
+ <form action="a.html" method="post">
+
+   <div class="form_fields">
+
+    <label for="Receiver">To:</label><br>
+    <input type="text"  value="Isnand Company" id="Receiver" readonly name="Receiver"><hr>
+
+    <input type="hidden" name="ID" value="120">
+
+    <label for="username">Enter Username:</label><br>
+    <input type="text" id="username" required placeholder="ahmed" name="username" autofocus ><hr>
+
+    <label for="email">Enter Email:</label><br>
+    <input type="email" required placeholder="ahmed@gmail.com" name="email" id="email"><hr>
+ 
+ 
+    <label for="barcord">Enter Barcord:</label><br>
+    <input type="text" placeholder="must consist of 5 numbers"  maxlength="5" name="the product's barcord" id="barcord"><hr>
+ 
+    <label>Choose the type of your operating system:</label><br>
+    <input type="radio" value="Windows" name="Choose the type of your operating system:" id="radio1"><label for="radio1">Windows</label><br>
+    <input type="radio" value="Mac" name="Choose the type of your operating system:" id="radio2" ><label for="radio2">Mac</label><br>
+    <input type="radio" value="Linux" name="Choose the type of your operating system:" id="radio3"><label for="radio3">Linux</label><hr>
+ 
+    
+    <label for="devices_specifications">What are the specifications of the device?</label><br>
+    <input type ="text" placeholder="choose or write the specifications" name="What are the specifications of the device?" list="specifications" id="devices_specifications">
+    <datalist id="specifications">
+      <option value="Windows7,64bit "></option>
+      <option value="Windows10,8GB"></option>
+     </datalist><hr>
+
+     <label for="">What is the selling price of the product(In iraqi dinars)?</label><br>
+     <input type="checkbox" value="more than 250ID" name="What is the selling price of the product(In iraqi dinars)?" id="checkbox1"><label for="checkbox1">more than 250ID</label><br>
+     <input type="checkbox" value="more than 500ID" name="What is the selling price of the product(In iraqi dinars)?" id="checkbox2"><label for="checkbox2">more than 500ID</label><br>
+     <input type="checkbox" value="Price is determined by product specifications" name="What is the selling price of the product(In iraqi dinars)?" id="checkbox3"><label for="checkbox3">Price is determined by product specifications</label><br>
+     <input type="checkbox" value="The price is determined by agreement with the buyer" name="What is the selling price of the product(In iraqi dinars)?" id="checkbox4"><label for="checkbox4">The price is determined by agreement with the buyer</label><hr>
+
+     <!--Difference between checkbox and radio input-->
+     <!--The checkbox buttons enable user to select(choose) one value or more of inputs-->
+     <!--and radio buttons allow to user to select only one value of inputs-->
+
+     </div>
+
+   <div class="form_send_button">
+    <input type="submit" value="send">
+   </div>
+
+ </form> 
+</body>
+
+</html>
